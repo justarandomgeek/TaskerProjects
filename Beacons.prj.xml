@@ -1,0 +1,175 @@
+<TaskerData sr="" dvi="1" tv="4.8u3m">
+	<Profile sr="prof21" ve="2">
+		<cdate>1462650857611</cdate>
+		<edate>1462652376083</edate>
+		<id>21</id>
+		<mid0>26</mid0>
+		<nme>Beacons: Appeared</nme>
+		<Event sr="con0" ve="2">
+			<code>599</code>
+			<Str sr="arg0" ve="3">net.beaconradar.BEACON_APPEARED</Str>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="0"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+		</Event>
+	</Profile>
+	<Profile sr="prof28" ve="2">
+		<cdate>1462650910759</cdate>
+		<clp>true</clp>
+		<edate>1462652342112</edate>
+		<id>28</id>
+		<mid0>29</mid0>
+		<nme>Beacons: Disappeared</nme>
+		<Event sr="con0" ve="2">
+			<code>599</code>
+			<Str sr="arg0" ve="3">net.beaconradar.BEACON_DISAPPEARED</Str>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="0"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+		</Event>
+	</Profile>
+	<Profile sr="prof9" ve="2">
+		<cdate>1462594753507</cdate>
+		<cldm>1</cldm>
+		<clp>true</clp>
+		<edate>1462652386547</edate>
+		<id>9</id>
+		<mid0>14</mid0>
+		<nme>Beacons: Seen</nme>
+		<Event sr="con0" ve="2">
+			<code>599</code>
+			<Str sr="arg0" ve="3">net.beaconradar.BEACON_VISIBLE</Str>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="0"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+		</Event>
+	</Profile>
+	<Project sr="proj0" ve="2">
+		<cdate>1462650351503</cdate>
+		<name>Beacons</name>
+		<pids>28,9,21</pids>
+		<tids>54,55,29,61,26,14,30</tids>
+	</Project>
+	<Task sr="task14">
+		<cdate>1462594759983</cdate>
+		<edate>1462650812216</edate>
+		<id>14</id>
+		<Action sr="act0" ve="7">
+			<code>548</code>
+			<Str sr="arg0" ve="3">%name %rssi</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task26">
+		<cdate>1462650862274</cdate>
+		<edate>1462650884034</edate>
+		<id>26</id>
+		<Action sr="act0" ve="7">
+			<code>548</code>
+			<Str sr="arg0" ve="3">NEW: %name %rssi</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task29">
+		<cdate>1462650913988</cdate>
+		<edate>1462650937444</edate>
+		<id>29</id>
+		<Action sr="act0" ve="7">
+			<code>548</code>
+			<Str sr="arg0" ve="3">~%name</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task30">
+		<cdate>1462650962006</cdate>
+		<edate>1462652246776</edate>
+		<id>30</id>
+		<nme>Beacons: Stop Scanning</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>877</code>
+			<Str sr="arg0" ve="3">net.beaconradar.NOTIF_REQ_KILL</Str>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Int sr="arg9" val="2"/>
+		</Action>
+	</Task>
+	<Task sr="task54">
+		<cdate>1462650962006</cdate>
+		<edate>1462652256809</edate>
+		<id>54</id>
+		<nme>Beacons: Pause Scanning</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>877</code>
+			<Str sr="arg0" ve="3">net.beaconradar.NOTIF_REQ_PAUSE</Str>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Int sr="arg9" val="2"/>
+		</Action>
+	</Task>
+	<Task sr="task55">
+		<cdate>1462650962006</cdate>
+		<edate>1462652268747</edate>
+		<id>55</id>
+		<nme>Beacons: Start Scanning</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>877</code>
+			<Str sr="arg0" ve="3">net.beaconradar.NOTIF_REQ_SCAN</Str>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Int sr="arg9" val="2"/>
+		</Action>
+	</Task>
+	<Task sr="task61">
+		<cdate>1462651613860</cdate>
+		<edate>1462652278999</edate>
+		<id>61</id>
+		<nme>Beacons: Scan Now</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">Beacons: Pause Scanning</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">Beacons: Start Scanning</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+		</Action>
+	</Task>
+</TaskerData>
